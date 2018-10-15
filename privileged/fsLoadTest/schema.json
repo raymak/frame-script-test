@@ -1,0 +1,15 @@
+[
+	{
+		"namespace": "fsLoadTest",
+		"description": "Frame Script load test",
+		"functions": [
+			{
+				"name": "start",
+				"type": "function",
+				"description": "start the test",
+				"async": true,
+				"parameters": []
+			}
+		]
+	}
+]

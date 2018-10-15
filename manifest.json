@@ -1,0 +1,25 @@
+{
+  "name": "frame script load test",
+  "version": "0.1",
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "fs-load-test@mozilla.com",
+      "strict_min_version": "61.0a1"
+    }
+  },
+  "experiment_apis": {
+    "fsLoadTest": {
+      "schema": "./privileged/fsLoadTest/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "./privileged/fsLoadTest/api.js",
+        "paths": [["fsLoadTest"]]
+      }
+    }
+  },
+  "permissions": [],
+  "background": {
+    "scripts": ["background.js"]
+  }
+}
